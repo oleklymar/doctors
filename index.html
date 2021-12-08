@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-none d-md-block bg-gray">
+            <div class=" container">
+                <div class="d-flex justify-content-between">
+                    <nav>
+                        <ul class="d-flex list-unstyled m-0">
+                            <li>
+                                <a href="#" class="nav-links p-1 text-decoration-none text-center text-gray d-inline-block fs-14">Контакты</a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="#" class="nav-links p-1 text-decoration-none text-center text-gray d-inline-block fs-14">О
+                                    нас
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="d-flex list-unstyled m-0">
+                            <li>
+                                <a href="#" class="p-1 text-decoration-none d-flex text-center text-dark d-inline-block">
+                                    <img src="/icons/header/location.svg" alt="Локация">
+                                    <span class="fs-14 ms-2">Москва</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="p-1 text-decoration-none d-flex text-center text-dark d-inline-block">
+                                    <img src="/icons/header/call.svg" alt="Телефон">
+                                    <span class="fs-14 ms-2">8 800 707-51-97</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between mt-md-2 mt-xl-2 pt-md-1 pt-xl-1 p-0 m-0">
+                <div>
+                    <a href="#" class="d-block">
+                        <img src="/icons/header/Logo.svg" alt="Лого">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex position-relative">
+                        <div class="d-none d-md-block">
+                            <form class="search-form">
+                                <input type="search" placeholder="Найти врача, болезнь, симптом" class="p-1 search-input">
+                            </form>
+                        </div>
+                        <div class="button-search-box">
+                            <button type="button" class="btn btn-search text-center d-flex justify-content-center align-items-center">
+                                <img src="/icons/header/search.svg" alt="Поиск" width="12px" height="12px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block d-xl-block">
+                        <button type="button" class="btn btn-in fs-14">Войти</button>
+                    </div>
+                    <div class="d-block d-md-none d-xl-none burger-menu">
+                        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                            <img src="/icons/header/menu_burger.svg" class=" d-inline-block" alt="Меню" width="18px" height="12px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3 d-none d-md-block d-xl-block">
+                <ul class="nav nav-tabs d-md-flex flex-md-nowrap">
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Медкарта</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item me-2 position-relative">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct stand-out" href="#">Врачи</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Сиделки</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Клиники</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Страховые</a>
+                    </li>
+                    <li class="nav-item me-2 position-relative">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct  label" href="#">База знаний</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-15 fw-500 nav-link-correct mb-0  active" href="#">Дежурный доктор</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="pt-3 mt-4">
+        <div class="container d-flex">
+            <h1 class="m-0">Врачи</h1>
+            <span class="d-inline-block fs-3 ms-3 text-gray mt-auto">10 291</span>
+        </div>
+        <div class="container mt-4 pt-2">
+            <div class="d-flex flex-column flex-md-row flex-xl-row">
+                <div class="d-flex col-12 col-md-6 col-xl-4 position-relative mb-20 mb-md-0 mb-xl-0">
+                    <div class="w-100">
+                        <form class="search-form w-100">
+                            <input type="search" placeholder="Найти врача, болезнь, симптом" class="p-1 search-input">
+                        </form>
+                    </div>
+                    <div class="button-search-box">
+                        <button type="button" class="btn btn-search text-center d-flex justify-content-center align-items-center">
+                            <img src="/icons/header/search.svg" alt="Поиск" width="12px" height="12px">
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex w-100 px-1 ms-md-4 ms-xl-4 px-xl-1 swich-contener">
+                        <div class="swich-box">
+                            <input type="radio" name="health" value="Взрослым" class="swich-symptom" checked>
+                            <span class="swich-symptom-text fs-17">Списком</span>
+                        </div>
+                        <div class="swich-box">
+                            <input type="radio" name="health" value="Детям" class="swich-symptom">
+                            <span class="swich-symptom-text fs-17">На карте</span>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-none d-xl-block ms-3 w-100">
+                        <div class="d-flex h-100 bg-gray align-items-center sort-box">
+                            <span class="fs-17">По популярности</span>
+                            <div>
+                                <img src="/icons/arrow_drop_down.svg" alt="Кнопка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray ms-3 filters">
+                        <img src="/icons/filter-icon.svg" alt="Фильтры">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-xl-4 pt-xl-2 mt-20">
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-decoration-none text-reset">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-block mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-block pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0 mt-xl-2">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"
+                            </p>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-decoration-none text-reset">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-reset text-decoration-none">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="d-none mb-20 mb-md-3 md-xl-4">
+                            <div class="card-date-enrty d-flex">
+                                <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                                <div class="text-gray fs-17 me-4">Вт, 18</div>
+                                <div class="text-gray fs-17 me-4">Ср, 19</div>
+                                <div class="text-gray fs-17 me-4">Чт, 20</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-decoration-none text-reset">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-block mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-block pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0 mt-xl-2">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"
+                            </p>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-reset text-decoration-none">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-decoration-none text-reset">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="d-none mb-20 mb-md-3 md-xl-4">
+                            <div class="card-date-enrty d-flex">
+                                <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                                <div class="text-gray fs-17 me-4">Вт, 18</div>
+                                <div class="text-gray fs-17 me-4">Ср, 19</div>
+                                <div class="text-gray fs-17 me-4">Чт, 20</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray border-radius-24 d-flex flex-column flex-md-row flex-xl-row justify-content-between p-3 p-md-3 p-xl-4">
+                <div class="d-flex flex-column">
+                    <h4 class="fw-bold">Дежурный доктор</h4>
+                    <span class="d-inline-block fs-17 text-gray">Быстрая помощь здесь и сейчас</span>
+                </div>
+                <div class="d-flex align-items-center mt-3 mt-md-0 mt-xl-0">
+                    <button type="button" class="btn w-100 bg-pink border-radius-24 text-white">Позвонить</button>
+                </div>
+            </div>
+            <div class="row mt-xl-4 pt-xl-2 mt-20">
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-reset text-decoration-none">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-block mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-block pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0 mt-xl-2">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"
+                            </p>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-decoration-none text-reset">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="card-date-enrty d-flex mb-20 mb-md-3 md-xl-4">
+                            <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                            <div class="text-gray fs-17 me-4">Вт, 18</div>
+                            <div class="text-gray fs-17 me-4">Ср, 19</div>
+                            <div class="text-gray fs-17 me-4">Чт, 20</div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mb-20 mb-xl-4 pb-xl-2">
+                    <div class="p-0 h-100 py-3 p-md-3 p-xl-4 doctors-cards border-radius-24">
+                        <a href="#" class="text-reset text-decoration-none">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex rating">
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_yellow.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <div>
+                                            <img src="/icons/cards/star_gray.svg" alt="Звезда">
+                                        </div>
+                                        <span class="d-inline-block border-radius-24 bg-gray py-1 px-2 ms-2">234</span>
+                                    </div>
+                                    <h5 class="mb-1">Никулина Марина Викторовна</h5>
+                                    <div class="text-gray fs-17">Стаж 21 год</div>
+                                </div>
+                                <div class="d-flex ps-4 justify-content-center align-items-center">
+                                    <img src="/img/cards/card-photo1.png" alt="Аватар">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-1 d-flex flex-wrap">
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ТЕРАПЕВТ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    ВЫСШАЯ КАТЕГОРИЯ</div>
+                                <div class="fs-12 me-2 fw-600 bg-gray border-radius-24 py-6_px-12 mb-2 align-items-center">
+                                    КАНДИДАТ НАУК</div>
+                            </div>
+                        </a>
+                        <div class="mb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">от 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">ОНЛАЙН</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box">
+                                <span class="d-inline-block fs-14 fw-600">2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">В КЛТНИКЕ</span>
+                            </div>
+                            <div class="d-flex flex-column card-price-box active">
+                                <span class="d-inline-block fs-14 fw-600">от 2 699 ₽</span>
+                                <span class="text-gray fs-12 mt-1 d-inline-block">НА ДОМУ</span>
+                            </div>
+                        </div>
+                        <div class="d-none mb-20 mb-md-3 md-xl-4">
+                            <div class="card-date-enrty d-flex">
+                                <div class="text-gray fs-17 me-4 active">Пн, 17</div>
+                                <div class="text-gray fs-17 me-4">Вт, 18</div>
+                                <div class="text-gray fs-17 me-4">Ср, 19</div>
+                                <div class="text-gray fs-17 me-4">Чт, 20</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <button type="button" class="btn py-2 m-0 btn-in fs-17 fw-600 w-100">Вызвать врача на
+                                дом</button>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-md-3 mt-xl-3 mb-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-decoration-none fs-14 text-reset text-dark-blue d-inline-block">Телефон
+                                    для записи: 8 (499) 519-38-31</a>
+                            </div>
+                        </div>
+                        <div class="d-none mb-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="ms-2 mt-2">
+                                    <button type="button" class="btn m-0 btn-in fs-12">ещё 20</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none mb-md-3 mb-xl-4">
+                            <div class="d-flex flex-wrap">
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                                <div class="bg-gray ms-2 mt-2 py-6_px-12 border-radius-24 fs-12 fw-600">17:00</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-none d-xl-none mb-3">
+                            <div class="d-flex flex-column p-3 bg-gray border-radius-16 mt-16">
+                                <div class="fs-14 fw-600">Всё занято</div>
+                                <div class="fs-14">Попробуйте выбрать другой день</div>
+                            </div>
+                        </div>
+                        <div class="d-none mt-0 mt-md-0 mt-xl-2 pt-0 pt-md-0 pt-xl-1 ">
+                            <p class="fs-14 m-0">Врач работает в клинике "Медцентр ОН КЛИНИК на Новом Арбате"</p>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="fs-14 m-0 mb-1">Медцентр ОН КЛИНИК на Новом Арбате</div>
+                            <div class="text-gray fs-14 m-0">г. Москва, ул. Большая Молчановка, д. 32,<br> стр. 1</div>
+                        </div>
+                        <div class="d-none d-md-block d-xl-block mt-1">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Смоленская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                                <div class="d-flex align-items-center me-3">
+                                    <div class="point-marker" style="background-color: #0057FF;"></div>
+                                    <div class="text-gray ms-1">Арбатская</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-20 mt-xl-4 pt-0 pt-xl-1">
+                    <div class="col-12 col-md-4 col-xl-4">
+                        <button type="button" class="btn w-100 ms-0 btn-in fs-14">Показать ещё</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="article-box d-none d-md-none d-xl-block">
+        <div class="container d-flex">
+            <article class="pe-1 col-6">
+                <h3 class="fw-bold fs-4 m-0">Врач всегда рядом</h3>
+                <p class="mt-3 fs-14 text-gray">
+                    Наконец-то современные технологии начинают проникать и в сферу здравоохранения. Время очередей и споров «кто последний к терапевту» заканчивается, ведь приходит эра телемедицины. Давайте разберемся, что же означает данное понятие?
+                </p>
+                <p class="fs-14 text-gray">
+                    Телемедицина - это оказание профессиональной медицинской консультации онлайн посредством видеосвязи.
+                </p>
+
+                <h5 class="fw-600 mb-0">Как это работает?</h5>
+
+                <p class="mt-3 fs-14 text-gray">Заходите на сайт vrachi-online.ru. Выбираете нужного врача и назначаете удобное время консультации. Подробно рассказываете о том, что вас беспокоит. Получаете экспертное мнение.
+                </p>
+                <p class="fs-14 text-gray">
+                    Как видите, всего четыре простых шага отделяют вас от своевременной медицинской помощи. А между тем, данный сервис существует уже очень давно.
+                </p>
+                <p class="fs-14 text-gray">
+                    Телемедицина в России развивается поистине ударными темпами. И это неудивительно. Ведь врачи онлайн - это своевременная запись к врачу для тех, кто находится в труднодоступных регионах России. Только прием врача происходит не в клинике, а прямо на дому
+                    у пациента. Все, что нужно - это доступ к устройству, которое поддерживает видеосвязь.
+                </p>
+                <p class="pt-2 mt-4 fs-4 mb-0 text-gray">Решитесь на это сегодня, и вы заметите, как положительно изменилась ваша жизнь!</p>
+            </article>
+            <article class="col-6 ms-4 pe-1">
+
+                <h5 class="mb-0 fw-600">Вот лишь краткий список возможностей удаленной медицины:</h5>
+
+                <p class="mt-3 fs-14 text-gray">
+                    Наблюдение за трудно транспортируемыми пациентами, которые проходят домашнее лечение, а также за больными, страдающими хроническими заболеваниями.
+                </p>
+                <p class="fs-14 text-gray">
+                    Возможность получить в кратчайшие сроки консультацию врача, находящегося даже за тысячи километров. Врачионлайн — это мгновенная запись на прием к практически к любому доктору из любой точки мира.
+                </p>
+                <p class="fs-14 text-gray">
+                    Медицинская помощь за границей. Телемедицина поможет вам в независимости от вашего месторасположения и знания местного языка.
+                </p>
+                <p class="fs-14 text-gray">
+                    Удаленная консультация с врачом на сайте телемедицины позволит своевременно обнаружить проблему и оперативно попасть к нужному специалисту, если это необходимо.
+                </p>
+                <p class="fs-14 text-gray">
+                    Повышение качества медицинского обслуживания и решение проблем спорного диагноза и выбора методов лечения. С телемедициной можно обратиться к опыту разных специалистов и получить лучшие результаты.
+                </p>
+                <p class="fs-14 text-gray">
+                    Удаленные консультации с психотерапевтом. Вы сможете получить психологическую помощь специалиста именно тогда, когда она нужна вам больше всего.
+                </p>
+                <p class="fs-14 text-gray">
+                    Конфиденциальность. Вы можете получить консультацию анонимно, врачу не нужно знать ваше реальное имя.
+                </p>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="container d-flex flex-column-reverse flex-md-column-reverse flex-xl-row">
+            <div class="col-12 col-md-12 col-xl-3 d-flex flex-column flex-md-row flex-xl-column">
+                <div class="mb-4 col-12 col-md-6 col-xl-12">
+                    <a href="#" class="d-block">
+                        <img src="/icons/header/Logo.svg" alt="Лого">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-12">
+                    <a href="#" class="mb-2 text-reset d-block text-decoration-none">8 800 707-51-97</a>
+                    <a href="#" class="mb-4 d-block text-decoration-none text-reset fs-17">vrachi-online@mail.gom</a>
+                </div>
+                <div class="tex-gray fs-14 col-12 col-md-6 col-xl-12">© 2016–2020 «Врачи онлайн»</div>
+                <div class="d-none d-md-none d-xl-block mt-4">
+                    <div class="d-flex">
+                        <a href="#" class="d-inline-block social-media-linck">
+                            <img src="/icons/social-icon/VK.svg" alt="Вконтакте">
+                        </a>
+                        <a href="#" class="d-inline-block social-media-linck">
+                            <img src="/icons/social-icon/OK.svg" alt="Однокласники">
+                        </a>
+                        <a href="#" class="d-inline-block social-media-linck">
+                            <img src="/icons/social-icon/Twitter.svg" alt="Твитер">
+                        </a>
+                        <a href="#" class="d-inline-block social-media-linck">
+                            <img src="/icons/social-icon/Zen.svg" alt="Зен">
+                        </a>
+                        <a href="#" class="d-inline-block social-media-linck">
+                            <img src="/icons/social-icon/Insta.svg" alt="Инстаграм">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-7 d-flex flex-column flex-md-row flex-xl-row pb-4 mb-5 pb-md-3 mb-md-5 pb-xl-0 mb-xl-0">
+                <div class="col-12 col-md-4 col-xl-3 pb-3 pb-md-0 pb-xl-0 mb-4 mb-md-0 mb-xl-0">
+                    <div class="fw-600 fs-17 pb-1 mb-2">Пациентам</div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Врачи</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Клинники</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Страховые</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Акции</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">О нас</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xl-6 pb-3 pb-md-0 pb-xl-0 mb-4 mb-md-0 mb-xl-0">
+                    <div class="fw-600 fs-17 pb-1 mb-2">Услуги</div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Дежурный доктор</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Запись в клинику</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Онлайн консультацияовые</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Вызов врача на дом</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-dark-blue text-reset text-decoration-none fs-17">Все услуги</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="fw-600 fs-17 pb-1 mb-2">База знаний</div>
+                    <div class="pb-1 mb-2 d-flex">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17 me-2 pe-1">
+                            Статьи
+                        </a>
+                        <span class="p-1 bg-gray border-radius-24 fs-12 text-gray">234</span>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Болезни</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Симптомы</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Направления</a>
+                    </div>
+                    <div class="pb-1 mb-2">
+                        <a href="#" class="d-block text-gray text-reset text-decoration-none fs-17">Частые вопросы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-none d-xl-block col-2">
+                <div class="d-flex flex-column">
+                    <a href="#" class="d-block mb-3 d-flex justify-content-end">
+                        <img src="/img/apple-store.svg" alt="Магазин приложений apple">
+                    </a>
+                    <a href="#" class="d-block mb-3 d-flex justify-content-end">
+                        <img src="/img/google-play.svg" alt="Магазин приложений google">
+                    </a>
+                    <a href="#" class="d-block mb-3 d-flex justify-content-end">
+                        <img src="/img/app-gallary.svg" alt="Магазин приложений huawei">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>

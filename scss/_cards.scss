@@ -1,0 +1,86 @@
+.doctors-cards {
+    box-shadow: 0px 16px 32px rgba(38, 43, 47, 0.08);
+}
+
+.rating {
+    margin-bottom: 20px;
+    & div {
+        margin-right: 11px;
+    }
+}
+
+.card-price-box {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1) {
+        background-color: #FDF5FB;
+        border-radius: 12px;
+        margin-right: 10px;
+        &.active {
+            border: 1px solid #FF008A;
+            border-radius: 12px;
+        }
+    }
+    &:nth-child(2) {
+        background-color: #EDF7FF;
+        border-radius: 12px;
+        margin-right: 10px;
+        &.active {
+            border: 1px solid #008CFC;
+            border-radius: 12px;
+        }
+    }
+    &:nth-child(3) {
+        background-color: #FFF8E0;
+        border-radius: 12px;
+        &.active {
+            border: 1px solid #FFC500;
+            border-radius: 12px;
+        }
+    }
+}
+
+.card-date-enrty {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #E3EAF1;
+    }
+    & div.active {
+        color: #000;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #FF008A;
+        }
+    }
+}
+
+.point-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    background-color: #00B2FF;
+    border-radius: 50%;
+}
+
+.article-box {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}

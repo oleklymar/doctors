@@ -1,0 +1,60 @@
+.swich-contener {
+    background-color: #F5F7FD;
+    border-radius: 24px;
+    height: 44px;
+    min-width: 231px;
+}
+
+.swich-box {
+    display: flex;
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    text-align: center;
+}
+
+.swich-symptom {
+    z-index: 2;
+    width: 100%;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+    &:checked~.swich-symptom-text {
+        background-color: #fff;
+        color: #000;
+        border-radius: 40px;
+    }
+}
+
+.swich-symptom-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    z-index: 1;
+    display: inline-block;
+    color: #6B7780;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.sort-box {
+    border-radius: 24px;
+    & span {
+        padding: 10px 16px 10px 16px;
+    }
+    & div img {
+        display: inline-block;
+        padding: 15px 15px 15px 0;
+    }
+}
+
+.filters {
+    border-radius: 24px;
+    & img {
+        padding: 13px;
+    }
+}
